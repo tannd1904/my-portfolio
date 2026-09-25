@@ -25,6 +25,8 @@ export const metadata: Metadata = {
     'Distributed Systems',
     'Microservices',
     'Java 17',
+    'Java 21',
+    'Java 23',
     'Spring Boot 3',
     'Enterprise E-Commerce',
     'SAP Commerce Cloud',

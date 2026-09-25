@@ -28,6 +28,8 @@ export default function InteractiveTerminal() {
       command: 'tan.contact()',
       output: [
         `Email: ${profileData.email}`,
+        `Phone: ${profileData.phone}`,
+        `Location: ${profileData.location}`,
         `LinkedIn: ${profileData.linkedinUrl}`,
         `GitHub: ${profileData.githubUrl}`,
       ],
@@ -56,6 +58,8 @@ export default function InteractiveTerminal() {
       case 'contact':
         output = [
           `Email: ${profileData.email}`,
+          `Phone: ${profileData.phone}`,
+          `Location: ${profileData.location}`,
           `LinkedIn: ${profileData.linkedinUrl}`,
           `GitHub: ${profileData.githubUrl}`,
         ];
@@ -63,7 +67,7 @@ export default function InteractiveTerminal() {
       case 'tan.getstack()':
       case 'stack':
         output = [
-          'Backend: Java 11/17, Spring Boot 3, Spring Security 6, REST APIs',
+          'Backend: Java (11 / 17 / 21 / 23), Spring Boot 3, Spring Security 6, REST APIs',
           'Enterprise: SAP Commerce Cloud, Hybris, Headless Commerce',
           'Data: PostgreSQL, MSSQL, Oracle, Redis, Liquibase, Flyway',
           'DevOps: Docker, Jenkins CI/CD, SonarQube, JUnit, Mockito',

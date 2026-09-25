@@ -19,7 +19,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-xs font-mono text-foreground-muted">
-            Java 17 • Spring Boot 3 • Microservices Architecture • Enterprise E-Commerce
+            Java (11 / 17 / 21 / 23) • Spring Boot 3 • Microservices Architecture • Enterprise E-Commerce
           </p>
         </div>
 

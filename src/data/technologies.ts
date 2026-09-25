@@ -20,7 +20,7 @@ export const arsenalCategories: ArsenalCategory[] = [
     tagline: "High-throughput, resilient enterprise application foundations",
     iconName: "network",
     technologies: [
-      "Java 11 / 17",
+      "Java 11 / 17 / 21 / 23",
       "Spring Boot 3",
       "Spring Security 6",
       "Microservices",
