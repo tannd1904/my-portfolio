@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, FileText } from 'lucide-react';
 import { LinkedinIcon, GithubIcon } from '@/components/ui/icons';
+import Avatar from '@/components/ui/Avatar';
 import { profileData } from '@/data/portfolio';
 
 const navLinks = [
@@ -36,17 +37,25 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-        {/* Brand identity */}
+        {/* Brand identity with compact Avatar */}
         <Link
           href="/"
-          className="group flex flex-col focus:outline-none focus-visible:ring-1 focus-visible:ring-accent-cyan rounded-md"
+          className="group flex items-center gap-3 focus:outline-none focus-visible:ring-1 focus-visible:ring-accent-cyan rounded-md"
         >
-          <span className="text-sm font-semibold tracking-tight text-foreground group-hover:text-accent-cyan transition-colors">
-            {profileData.name}
-          </span>
-          <span className="text-xs text-foreground-muted font-mono tracking-wider">
-            {profileData.role}
-          </span>
+          <Avatar
+            src={profileData.avatarUrl}
+            alt={profileData.name}
+            size="sm"
+            className="shrink-0"
+          />
+          <div className="flex flex-col">
+            <span className="text-sm font-semibold tracking-tight text-foreground group-hover:text-accent-cyan transition-colors">
+              {profileData.name}
+            </span>
+            <span className="text-xs text-foreground-muted font-mono tracking-wider">
+              {profileData.role}
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Navigation Links */}

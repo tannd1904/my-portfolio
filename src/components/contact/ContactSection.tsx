@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Mail, Check, Copy, FileText, ArrowUpRight } from 'lucide-react';
 import { LinkedinIcon, GithubIcon } from '@/components/ui/icons';
+import Avatar from '@/components/ui/Avatar';
 import { profileData } from '@/data/portfolio';
 
 export default function ContactSection() {
@@ -20,13 +21,27 @@ export default function ContactSection() {
       
       <div className="max-w-6xl mx-auto px-6">
         <div className="rounded-2xl bg-[#0d0e12] border border-white/[0.08] p-8 sm:p-12 md:p-16 flex flex-col md:flex-row md:items-center justify-between gap-10">
-          {/* Headline & Description */}
+          {/* Headline & Description with Profile Signature */}
           <div className="max-w-xl flex flex-col gap-4">
             <div className="flex items-center gap-2">
               <span className="text-xs font-mono text-accent-cyan tracking-wider">06 // CONNECT</span>
               <span className="h-px w-8 bg-accent-cyan/30" />
             </div>
-            <h2 id="contact-heading" className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
+
+            <div className="flex items-center gap-3.5 my-1">
+              <Avatar
+                src={profileData.avatarUrl}
+                alt={profileData.name}
+                size="md"
+                showStatus={true}
+              />
+              <div>
+                <div className="text-sm font-semibold text-foreground">{profileData.name}</div>
+                <div className="text-xs font-mono text-foreground-muted">{profileData.role}</div>
+              </div>
+            </div>
+
+            <h2 id="contact-heading" className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground">
               Let&apos;s Build Systems That Scale.
             </h2>
             <p className="text-sm text-foreground-secondary leading-relaxed">

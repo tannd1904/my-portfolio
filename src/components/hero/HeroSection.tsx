@@ -2,6 +2,7 @@ import React from 'react';
 import StatusBadge from './StatusBadge';
 import HeroCTA from './HeroCTA';
 import SystemTopologyVisual from './SystemTopologyVisual';
+import Avatar from '@/components/ui/Avatar';
 import { profileData } from '@/data/portfolio';
 
 export default function HeroSection() {
@@ -14,8 +15,21 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Main Hero Copy & Actions */}
           <div className="lg:col-span-7 flex flex-col gap-6">
-            <div>
-              <StatusBadge />
+            {/* Profile Avatar + Status Lockup */}
+            <div className="flex items-center gap-4">
+              <Avatar
+                src={profileData.avatarUrl}
+                alt={profileData.name}
+                size="lg"
+                showStatus={true}
+                priority={true}
+              />
+              <div className="flex flex-col gap-1.5">
+                <StatusBadge />
+                <span className="text-[11px] font-mono text-foreground-muted tracking-wide">
+                  SAI Digital • Ex-Bosch • Ex-Softbank Project
+                </span>
+              </div>
             </div>
 
             <h1

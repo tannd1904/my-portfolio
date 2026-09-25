@@ -6,6 +6,7 @@ export interface Profile {
   statusBadge: string;
   headline: string;
   subheadline: string;
+  avatarUrl: string;
   email: string;
   linkedinUrl: string;
   githubUrl: string;
@@ -21,6 +22,7 @@ export const profileData: Profile = {
   headline: "Crafting High-Performance Distributed Systems & Enterprise E-Commerce.",
   subheadline:
     "Senior Software Engineer with 5+ years of experience architecting resilient backends, migrating legacy monoliths to microservices, and delivering mission-critical platforms for global leaders like Toyota, Bosch, and Softbank.",
+  avatarUrl: "/avatar.jpg",
   email: process.env.NEXT_PUBLIC_EMAIL || "YOUR_EMAIL_HERE",
   linkedinUrl:
     process.env.NEXT_PUBLIC_LINKEDIN_URL ||
