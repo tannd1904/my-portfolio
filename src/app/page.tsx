@@ -9,6 +9,8 @@ import PrinciplesSection from '@/components/principles/PrinciplesSection';
 import InteractiveTerminal from '@/components/terminal/InteractiveTerminal';
 import ContactSection from '@/components/contact/ContactSection';
 import Footer from '@/components/footer/Footer';
+import GoToTop from '@/components/ui/GoToTop';
+import PortfolioChatbot from '@/components/chatbot/PortfolioChatbot';
 
 export default function Home() {
   const jsonLd = {
@@ -28,7 +30,7 @@ export default function Home() {
     knowsAbout: [
       'Distributed Systems',
       'Microservices Architecture',
-      'Java 17',
+      'Java 11 / 17 / 21 / 23',
       'Spring Boot 3',
       'Enterprise E-Commerce',
       'SAP Commerce Cloud',
@@ -81,6 +83,12 @@ export default function Home() {
 
         {/* Minimal Engineering Footer */}
         <Footer />
+
+        {/* Interactive Floating Chatbot Assistant & Lead Forwarder */}
+        <PortfolioChatbot />
+
+        {/* Floating Go To Top Action */}
+        <GoToTop />
       </div>
     </>
   );
