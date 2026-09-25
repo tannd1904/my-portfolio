@@ -15,7 +15,7 @@ const monoFont = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://tannguyenduy.dev'),
+  metadataBase: new URL('https://www.tannd.online'),
   title: 'Tan Nguyen Duy — Senior Software Engineer | Distributed Systems & Enterprise E-Commerce',
   description:
     'Senior Software Engineer with 5+ years of experience architecting resilient backends, migrating legacy monoliths to microservices, and delivering mission-critical platforms for global leaders like Toyota, Bosch, and Softbank.',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://tannguyenduy.dev',
+    url: 'https://www.tannd.online',
     title: 'Tan Nguyen Duy — Senior Software Engineer | Distributed Systems & Enterprise E-Commerce',
     description:
       'Architecting resilient backends, migrating monoliths to microservices, and delivering mission-critical enterprise platforms.',

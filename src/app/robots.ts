@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://tannguyenduy.dev/sitemap.xml',
+    sitemap: 'https://www.tannd.online/sitemap.xml',
   };
 }

@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://tannguyenduy.dev';
+  const baseUrl = 'https://www.tannd.online';
   const currentDate = new Date().toISOString();
 
   return [
